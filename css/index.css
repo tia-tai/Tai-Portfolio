@@ -1,0 +1,334 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: white;
+  font-family: Helvetica, sans-serif;
+}
+nav {
+  background-color: rgb(221, 186, 144);
+  overflow: hidden;
+  border-bottom: 2px solid rgb(170, 148, 120);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+nav a {
+  float: right;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+nav a:hover {
+  background-color: rgb(182, 156, 125);
+}
+nav a.active {
+  background-color: bisque;
+}
+.hero {
+  background-color: blanchedalmond;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.hero h1 {
+  overflow: hidden;
+  white-space: nowrap;
+  font-family: monospace;
+  font-size: 3rem;
+}
+
+#typewriter::after {
+  content: "|";
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+.aboutme {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+.aboutme h2 {
+  font-size: 12px;
+  color: gray;
+  align-self: flex-start;
+  margin-bottom: 20px;
+}
+.aboutTextAndImage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 1000px;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.aboutText {
+  flex: 1;
+  min-width: 300px;
+  padding-right: 20px;
+}
+
+.aboutText p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+}
+
+.aboutmeLink {
+  margin-top: 20px;
+  text-align: left;
+}
+
+.aboutmeLink .btn-link {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background-color 0.3s;
+}
+
+.aboutmeLink .btn-link:hover {
+  background-color: #555;
+}
+
+.headshot {
+  flex: 0 0 300px;
+  max-width: 300px;
+  width: 100%;
+  border-radius: 10px;
+}
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+.contact h2 {
+  font-size: 12px;
+  color: gray;
+  align-self: flex-start;
+  margin-bottom: 20px;
+}
+
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  width: 100%;
+}
+
+.contactForm label {
+  margin: 10px 0 5px;
+  font-size: 14px;
+  color: #333;
+}
+
+.contactForm input,
+.contactForm textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.contactForm button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.contactForm button:hover {
+  background-color: #555;
+}
+
+.project {
+  padding: 40px 20px;
+  background-color: #f8f9fa;
+}
+
+.project h2 {
+  font-size: 12px;
+  color: gray;
+  margin-bottom: 30px;
+}
+
+.Projectcard {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 30px;
+  border: 2px solid rgb(170, 148, 120);
+  border-radius: 5px;
+  height: 80vh; /* Fixed height for the container */
+  max-height: 600px;
+}
+
+.project-sidebar {
+  flex: 0 0 200px;
+  background-color: white;
+  border-radius: 10px 0 0 10px;
+  padding: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  overflow-y: auto; /* Allow sidebar to scroll if needed */
+}
+
+.project-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.project-btn {
+  background: none;
+  border: none;
+  padding: 12px 16px;
+  text-align: left;
+  cursor: pointer;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #666;
+  transition: all 0.3s ease;
+}
+
+.project-btn:hover {
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+.project-btn.active {
+  background-color: rgb(221, 186, 144);
+  color: #333;
+}
+
+.project-content {
+  flex: 1;
+  overflow-y: auto; /* This makes the content area scrollable */
+  padding: 20px;
+  background-color: white;
+  border-radius: 0 10px 10px 0;
+}
+
+.project-card {
+  display: none;
+}
+
+.project-card.active {
+  display: block;
+}
+
+.card-image {
+  margin-bottom: 20px;
+}
+
+.card-image img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.card-content h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.card-content p {
+  color: #666;
+  line-height: 1.5;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+.card-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 15px;
+}
+
+.tag {
+  background-color: rgb(221, 186, 144);
+  color: #333;
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.card-links {
+  display: flex;
+  gap: 10px;
+}
+
+.btn-link {
+  background-color: #333;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.btn-link:hover {
+  background-color: #555;
+}
+
+@media (max-width: 768px) {
+  .Projectcard {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .project-sidebar {
+    flex: none;
+    border-radius: 10px 10px 0 0;
+  }
+
+  .project-nav {
+    flex-direction: row;
+    overflow-x: auto;
+    padding-bottom: 10px;
+  }
+
+  .project-btn {
+    white-space: nowrap;
+    min-width: 120px;
+  }
+
+  .project-content {
+    border-radius: 0 0 10px 10px;
+    max-height: 400px;
+  }
+}

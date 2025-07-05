@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/index.css" />
+    <title>Tai Yu Lin</title>
+  </head>
+  <body>
+    <nav>
+      <a href="#contact">contact</a>
+      <a href="#project">projects</a>
+      <a href="#aboutme">about me</a>
+    </nav>
+    <section class="hero">
+      <h1><span id="typewriter"></span></h1>
+    </section>
+    <section class="aboutme" id="aboutme">
+      <h2>\ about me</h2>
+      <div class="aboutTextAndImage">
+        <div class="aboutText">
+          <p>
+            Tai is a junior at Science Leadership Academy with a knack for
+            programming various projects, from web development to image
+            manipulation. With 5 years of experience in programming and
+            STEM-based fields, he thrives in the face of technical challenges.
+            Outside of programming, he is a rice and bread connoisseur.
+          </p>
+          <br />
+          <p>
+            Another known fact about him is that he has been in robotics for
+            three years and has designed and programmed countless intake
+            mechanisms. He loves creating complex designs that do what they are
+            meant to do. Some might say he is overengineering, but
+            overengineering should be the minimum. Other than robotics, Tai has
+            been involved in various engineering and AI internships and
+            competitions, working to refine his command over Python, AI, CAD,
+            and problem-solving skills.
+          </p>
+          <br />
+          <p>
+            After college, Tai aims to work as a mechatronic engineer,
+            developing robots and devices that will help solve daily dilemmas
+            and make the world a better place. Although if the world takes a
+            different turn, he is always up for working at Lockheed Martin.
+          </p>
+          <br />
+          <p>
+            Lately, he can be found at home binge-watching YouTube shorts or
+            running around Pennypack.
+          </p>
+          <div class="aboutmeLink">
+            <a
+              href="https://drive.google.com/file/d/1le6PfC_fBVFP2zbHCdqqperqC2gwg4jy/view"
+              class="btn-link"
+              >Resume</a
+            >
+            <a href="https://github.com/tia-tai" class="btn-link">GitHub</a>
+            <a href="www.linkedin.com/in/tai-lin" class="btn-link">LinkedIn</a>
+          </div>
+        </div>
+        <img src="image/headshot.jpg" class="headshot" />
+      </div>
+    </section>
+    <section class="project" id="project">
+      <h2>\ projects</h2>
+      <div class="Projectcard">
+        <div class="project-sidebar">
+          <div class="project-nav">
+            <button class="project-btn active" data-project="dosemate">
+              DoseMate
+            </button>
+            <button class="project-btn" data-project="wanderer">
+              Wanderer
+            </button>
+            <button class="project-btn" data-project="ai">Law By AI</button>
+            <button class="project-btn" data-project="osiris">Osiris AI</button>
+            <button class="project-btn" data-project="rube">
+              Rube Goldberg
+            </button>
+            <button class="project-btn" data-project="paikitty">
+              PaiKitty
+            </button>
+            <button class="project-btn" data-project="meow">
+              Meow! Search
+            </button>
+            <button class="project-btn" data-project="solar">
+              PV Array Plan
+            </button>
+          </div>
+        </div>
+        <div class="project-content">
+          <div class="project-card active" id="dosemate">
+            <div class="card-image">
+              <img src="image/dosemate.jpg" alt="DoseMate" />
+            </div>
+            <div class="card-content">
+              <h3>DoseMate</h3>
+              <p>
+                DoseMate is my team's (Analeigh, Rafi, Ryan, and I) Arduino
+                invention for the SLA 2025 junior Arduino invention challenge.
+                DoseMate is an automatic pill dispenser that holds up to six
+                different pills and portions them for you. While Analeigh and
+                Rafi worked on the CAD and structure aspect of the dispenser,
+                Ryan and I worked on the electronic side. Ryan spent most of the
+                time tuning the servos, while I mainly worked on the user
+                interface and backend. I developed a user interface using a
+                button, LCD screen, and a rotary encoder. All of this is
+                connected to an array that stores all the information and
+                processes it.
+              </p>
+              <p>
+                The biggest struggle during this project was getting the Arduino
+                to communicate to the ESP 32 and for the servos to turn to
+                exactly where they had to go. The problem with communication was
+                solved after two days of programming, however, the servos were
+                never able to be fully calibrated due to the lack of an encoder.
+              </p>
+              <p>
+                Ultimately, DoseMate never worked as intended, but I learned a
+                lot about programming in C and working with Arduinos and ESP.
+              </p>
+              <div class="card-tags">
+                <span class="tag">Fusion 360</span>
+                <span class="tag">Arduino</span>
+                <span class="tag">C</span>
+              </div>
+              <div class="card-links">
+                <a
+                  href="https://drive.google.com/file/d/1fRUNgTxLLBPosBEXk_Kh8-4cvQ_SXlXN/view?usp=sharing"
+                  class="btn-link"
+                  >Demo</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="project-card" id="wanderer">
+            <div class="card-image">
+              <img src="image/wanderer.png" alt="Wanderer" />
+            </div>
+            <div class="card-content">
+              <h3>Wanderer</h3>
+              <p>
+                Wanderer is the app that we created. It is an AI smart
+                exploration app that helps the youth, especially students,
+                become more socially aware and truly understand the important
+                cultural and historical aspects of their community through
+                interactive in-person and virtual guided tours. The purpose of
+                our app is to also combat the decrease in social interaction
+                because of high screen time usage by encouraging the youth to
+                utilize technology for a good purpose and explore what their
+                area has to offer. The goal is to make learning interactive,
+                fun, and immersive by connecting people with the places around
+                them.
+              </p>
+              <p>
+                Throughout the project, I helped to research and played a
+                significant role in designing the application on Figma by
+                applying UI/UX rules.
+              </p>
+              <p>
+                After several months, my team and I pitched our app to a panel
+                of judges and placed 2nd out of 8 teams.
+              </p>
+              <div class="card-tags">
+                <span class="tag">Figma</span>
+                <span class="tag">UI/UX</span>
+                <span class="tag">Research</span>
+              </div>
+              <div class="card-links">
+                <a
+                  href="https://www.figma.com/proto/Z7tj6hdAkmtJmRfA38wr97/Wanderer?node-id=1-3&starting-point-node-id=263%3A34&t=ODxbtS5ND6wQAEsU-1"
+                  class="btn-link"
+                  >Demo</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="project-card" id="ai">
+            <div class="card-image">
+              <img src="image/LawByAi.png" alt="LawByAi" />
+            </div>
+            <div class="card-content">
+              <h3>Law By AI</h3>
+              <p>
+                Law by AI is an accessible and engaging technology for people of
+                all ages and backgrounds to exercise their knowledge of law
+                every day.
+              </p>
+              <p>There are two versions of Law By AI:</p>
+              <p>
+                The daily challenge is similar to the popular game, "Wordle."
+                Users have five replies to solve a legal scenario. This game
+                mode is ranked and displayed on the leaderboard.
+              </p>
+              <p>
+                The freeplay version is similar to daily, however, users can
+                work their way through multiple prompts and working in a way
+                that's unranked.
+              </p>
+              <div class="card-tags">
+                <span class="tag">JavaScript</span>
+                <span class="tag">UI/UX</span>
+                <span class="tag">AI</span>
+                <span class="tag">FireStore</span>
+              </div>
+              <div class="card-links">
+                <a
+                  href="https://tia-tai.github.io/LawByAI/home.html"
+                  class="btn-link"
+                  >Live Demo</a
+                >
+                <a href="https://github.com/tia-tai/LawByAI" class="btn-link"
+                  >GitHub</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="project-card" id="osiris">
+            <div class="card-image">
+              <img src="image/osiris.png" alt="osirisAI" />
+            </div>
+            <div class="card-content">
+              <h3>Osiris AI</h3>
+              <p>
+                In 2023, I was frustrated that OpenAI wouldn't release their
+                voice assistant, so I programmed my own. Osiris uses ChatGPT 3.5
+                Turbo as the core. I used CustomTKinter to create the
+                application, and using Google's text-to-speech and voice
+                recognition library, I created an interface for the user to
+                utilize ChatGPT through voice.
+              </p>
+              <div class="card-tags">
+                <span class="tag">CustomTKinter</span>
+                <span class="tag">UI/UX</span>
+                <span class="tag">OpenAI</span>
+              </div>
+              <div class="card-links">
+                <a href="https://github.com/tia-tai/OsirisAI" class="btn-link"
+                  >GitHub</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="project-card" id="rube">
+            <div class="card-image">
+              <img src="image/rube.png" alt="rube goldberg" />
+            </div>
+            <div class="card-content">
+              <h3>Rube Goldberg</h3>
+              <p>
+                The final section of the SLA 2024 Sophomore Rube Goldberg
+                machine. We used CAD, mechanical engineering, and electrical
+                engineering to bring Wilbur Scoville's Ski Resort to life.
+              </p>
+              <p>
+                The goal of this section was to bring the egg to the skillet.
+                But we included a twist. We included a servo that seasoned the
+                egg with the hottest hot sauce we could find.
+              </p>
+              <p>
+                During the actual performance, our section failed 11 times and
+                finally succeeded on the 12th.
+              </p>
+              <p>
+                The 11 failures came from problems with the electronics
+                components, like servos and beam breaks, which were difficult to
+                use without prior electrical engineering knowledge.
+              </p>
+              <div class="card-tags">
+                <span class="tag">Arduino</span>
+                <span class="tag">Mechanical Engineering</span>
+                <span class="tag">Fusion 360</span>
+                <span class="tag">3D Printing</span>
+                <span class="tag">Laser Cutting</span>
+              </div>
+              <div class="card-links">
+                <a href="https://youtu.be/-7vlE1JHyAY" class="btn-link">Demo</a>
+                <a
+                  href="https://drive.google.com/file/d/1VVcrt0TMPJvVFmd78c0Iuv7g24PURdWg/view?usp=sharing"
+                  class="btn-link"
+                  >CAD Model</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="project-card" id="paikitty">
+            <div class="card-image">
+              <img src="image/paikitty.png" alt="paikitty" />
+            </div>
+            <div class="card-content">
+              <h3>PaiKitty</h3>
+              <p>
+                PaiKitty is a Discord JRPG bot. Players collect anime characters
+                and use them in battles.
+              </p>
+              <p>
+                PaiKitty was developed using Discord.py, a Python library that
+                allows me to interact with the Discord API. Having learned from
+                my earlier, slower version of PaiKitty, which used JSON as the
+                database, I opted for learning MongoDB, which is a non-SQL
+                database. Being a non-SQL database, MongoDB is organized like
+                JSON while being more efficient with more data.
+              </p>
+              <p>
+                Ultimately, PaiKitty was discontinued in early 2024, but the
+                experience of MongoDB and Python stayed.
+              </p>
+              <div class="card-tags">
+                <span class="tag">Python</span>
+                <span class="tag">MongoDB</span>
+                <span class="tag">Pillow</span>
+              </div>
+            </div>
+          </div>
+          <div class="project-card" id="meow">
+            <div class="card-image">
+              <img src="image/meow.png" alt="Meow! Search" />
+            </div>
+            <div class="card-content">
+              <h3>Meow! Search</h3>
+              <p>
+                Meow! Search is a search engine that I created because of the
+                fear of being tracked. Modern search engines collect a ton of
+                information from their users. Every search they make, so that
+                they can make their query results "better." But who knows what
+                is really happening with our data? Thus, Meow! Search was
+                created to eliminate that fear.
+              </p>
+              <p>
+                Meow! Search was programmed entirely in Python. I used libraries
+                like Flask for the webpage, BeautifulSoup to scrape the web, and
+                JSON to store the website and extra information.
+              </p>
+              <p>
+                Throughout the process, I did a lot of research into Google and
+                Bing. I discovered that Google's website ranking algorithm is
+                based on backlinks. These are linked from one website that links
+                back to another. So that's exactly how I created my search
+                engine.
+              </p>
+              <p>
+                The main challenge of this project was that JSON is not designed
+                to function as a database, so each query took six minutes, and
+                the amount of data that could be stored was limited.
+                Additionally, most websites have limits for how many times you
+                can access them per second, and the web scraper I programmed
+                moved way too fast, so I was temporarily banned from many
+                websites.
+              </p>
+              <p>
+                Ultimately, I ran into hardware limits and had to stop the
+                project. But the search engine achieved my goal of being
+                accurate without collecting user information.
+              </p>
+              <div class="card-tags">
+                <span class="tag">Python</span>
+                <span class="tag">Django</span>
+                <span class="tag">Web Scrapping</span>
+              </div>
+            </div>
+          </div>
+          <div class="project-card" id="solar">
+            <div class="card-image">
+              <img src="image/pv.png" alt="photovoltaic" />
+            </div>
+            <div class="card-content">
+              <h3>Photovoltaic Array Plan</h3>
+              <p>
+                During the course of my sophomore internship, I worked alongside
+                an electrical engineer at Burns Engineering Group. We studied
+                specific components of photovoltaic systems, including panels,
+                combiner boxes, inverters, and wires.
+              </p>
+              <p>
+                Finally, for the final project, I created a photovoltaic system
+                for a concept school in Philadelphia. I looked into panels and
+                inverters that are compatible with each other. Then, calculated
+                the azimuth and angle to maximize the output. Finally, to
+                account for the significant output loss of panels in partial
+                shading, I included power optimizers, which are small chips
+                attached to the back of PV arrays.
+              </p>
+              <div class="card-tags">
+                <span class="tag">AutoCad</span>
+                <span class="tag">REVIT</span>
+                <span class="tag">Photovoltaic</span>
+              </div>
+              <div class="card-links">
+                <a
+                  href="https://drive.google.com/file/d/1mETiBe-XEx05MXljOc1v1z81r5Wlyt_Y/view"
+                  class="btn-link"
+                  >Engineering Plan</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="contact" id="contact">
+      <h2>\ contact me</h2>
+      <form class="contactForm" action="mailto:taiyulin14@gmail.com">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit">Send</button>
+      </form>
+    </section>
+    <script src="script/index.js"></script>
+  </body>
+</html>
